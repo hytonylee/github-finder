@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export class Search extends Component {
+class Search extends Component {
 	state = {
 		text: ''
 	};
@@ -25,6 +25,7 @@ export class Search extends Component {
 	};
 
 	render() {
+		const { clearUsers, showClear } = this.props;
 		return (
 			<div>
 				<form onSubmit={this.onSubmit} className='form'>
@@ -41,11 +42,8 @@ export class Search extends Component {
 						className='btn btn-dark btn-block'
 					/>
 				</form>
-				{this.props.showClear && (
-					<button
-						className='btn-light btn-block'
-						onClick={this.props.clearUsers}
-					>
+				{showClear && (
+					<button className='btn-light btn-block' onClick={clearUsers}>
 						Clear
 					</button>
 				)}
