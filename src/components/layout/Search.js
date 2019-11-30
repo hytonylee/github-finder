@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Search = ({ searchUsers, showClear, clearUsers, setAlert }) => {
+const Search = ({ clearUsers, showClear, searchUsers, setAlert }) => {
 	const [text, setText] = useState('');
 
 	const onSubmit = e => {
