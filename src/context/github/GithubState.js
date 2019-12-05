@@ -30,7 +30,7 @@ const GithubState = props => {
 
 		dispatch({
 			type: SEARCH_USERS,
-			payload: res.data
+			payload: res.data.items
 		});
 	};
 
