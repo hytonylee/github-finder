@@ -1,4 +1,4 @@
-# <a href src="https://github-repo-locater.netlify.com/">Github Repo Locater</a>
+# <a href src="http://github-repo-locater.netlify.com/">Github Repo Locater</a>
 This simple web app allows user to search any repos via creators' user names, and aim of this project is to learn how to manage Global states with Context via React Hook. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with Gihub API and React Hook.
 
 ## Available Scripts
